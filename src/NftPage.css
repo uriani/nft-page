@@ -1,0 +1,454 @@
+.nft-page {
+  width: 100%;
+  height: fit-content;
+}
+
+p {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  color: #858584;
+}
+
+.nftPage-cover {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.nft-page-artist-info {
+  margin-top: -5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+  gap: 30px;
+
+  width: 100%;
+  height: fit-content;
+
+  /* Background */
+
+  background: #2b2b2b;
+}
+
+.nft-info {
+  width: 84%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  height: fit-content;
+}
+
+.nft-info .headline-subhead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 100%;
+  height: 71px;
+}
+
+.auction-timer-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 30px;
+
+  width: 100%;
+  max-width: 315px;
+  height: 234px;
+
+  /* Background - Secondary */
+
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+
+.auction-timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 100%;
+  height: 84px;
+
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px;
+}
+
+.auction-timer p {
+  width: 100%;
+  height: 13px;
+
+  /* Caption - Space Mono */
+
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  /* or 13px */
+
+  /* Text */
+
+  color: #ffffff;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 100%;
+  height: 61px;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  gap: 12px;
+
+  width: 100%;
+  height: 60px;
+
+  /* Call to Action */
+
+  background: #a259ff;
+  border-radius: 20px;
+}
+
+.asset-12-2 img {
+  height: 100%;
+}
+
+.created-by {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 100%;
+  height: 56px;
+}
+
+.created-by p:nth-child(1) {
+  color: #858584;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 100%;
+  height: fit-content;
+}
+
+.description p:nth-child(1) {
+  width: 100%;
+  height: 22px;
+
+  /* Base (Body) - Space Mono */
+
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  color: #858584;
+}
+
+.description p:nth-child(2) {
+  color: #ffffff;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
+  color: #ffffff;
+
+  width: 100%;
+  height: fit-content;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 100%;
+  height: 90px;
+}
+
+.details div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 100%;
+  height: 24px;
+}
+
+.details p:nth-child(1) {
+  color: #858584;
+}
+
+.details p {
+  width: 315px;
+  height: 22px;
+
+  /* Base (Body) - Space Mono */
+
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  color: #ffffff;
+}
+
+.details svg {
+  font-size: 24px;
+  text-align: center;
+  color: #858584;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  width: 100%;
+  height: fit-content;
+}
+
+.tags-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  width: 100%;
+  height: 85%;
+}
+
+.tags-buttons button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+  gap: 12px;
+
+  width: fit-content;
+  height: 46px;
+
+  /* Background - Secondary */
+
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+
+.more-nft-from-the-artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+  gap: 60px;
+
+  width: 100%;
+  height: fit-content;
+
+  /* Background */
+
+  background: #2b2b2b;
+}
+
+.more-from-artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+
+  width: 84%;
+  height: 100%;
+}
+
+.more-from-artist button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  gap: 12px;
+
+  width: 100%;
+  height: 60px;
+
+  /* Call to Action */
+  background-color: transparent;
+  border: 2px solid #a259ff;
+  border-radius: 20px;
+}
+
+h4 {
+  width: 100%;
+  height: 39px;
+
+  /* H4 - Work Sans */
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  /* or 39px */
+
+  text-transform: capitalize;
+
+  /* White */
+
+  color: #ffffff;
+}
+
+@media (min-width: 700px) {
+  .nftPage-cover {
+    height: 420px;
+  }
+
+  .nft-page h4 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+  }
+
+  #nftPage-nft-info p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  #nftPage-nft-info {
+    display: grid;
+    grid-template-columns: 53% 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 30px;
+
+    height: fit-content;
+  }
+
+  .headline-subhead {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .auction-timer-cta {
+    grid-area: 1 / 2 / 7 / 3;
+    align-self: flex-start;
+    justify-self: flex-end;
+  }
+
+  .created-by {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .description {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .details {
+    grid-area: 4/ 1 / 5 / 2;
+  }
+
+  .tags {
+    grid-area: 5/ 1 / 6 / 2;
+  }
+
+  .more-from-artist {
+    gap: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    height: fit-content;
+  }
+
+  .more-from-artist h4 {
+    width: fit-content;
+    order: -2;
+  }
+
+  .more-from-artist button {
+    width: 70%;
+    padding: 0;
+    order: -1;
+    justify-self: flex-end;
+  }
+
+  #fragment-container {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+}
+
+@media (min-width: 1280px) {
+  .nftPage-cover {
+    height: 560px;
+  }
+
+  .nft-page h4 {
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 110%;
+  }
+
+  #nftPage-nft-info p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+  }
+
+  .tags-buttons {
+    flex-direction: row;
+  }
+
+  .auction-timer-cta {
+    max-width: 400px;
+  }
+}

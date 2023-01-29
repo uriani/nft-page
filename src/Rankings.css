@@ -1,0 +1,196 @@
+.rankings-container {
+  width: 100%;
+  height: fit-content;
+  background: #2b2b2b;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+  gap: 30px;
+}
+
+.rankings-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 84%;
+  height: 100%;
+}
+
+#rankings-headline-subhead {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+
+#rankings-headline-subhead h4 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  /* or 39px */
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.rankings-tabs-bar {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.rankings-tabs-bar div {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rankings-tabs-bar div:hover {
+  border-bottom: 1px solid #e3e0e0;
+  cursor: pointer;
+}
+
+.rankings-list {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.ranking-card {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 20px 40px auto 80px;
+  align-items: center;
+  gap: 10px;
+
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+
+.ranking-card:not(:first-child):hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.ranking-avatar {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.ranking-card:not(:first-child) .artist-name {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* identical to box height, or 31px */
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.ranking-card:nth-child(1) {
+  background-color: transparent;
+  border: 1px solid #3b3b3b;
+}
+
+.ranking-card:nth-child(1) .artist-name{
+  width: fit-content;
+}
+
+.ranking-card p {
+  text-align: center;
+}
+
+.ranking-card p:nth-child(1) {
+  isolation: isolate;
+}
+
+.rankings-list .ranking-card .artist-name {
+  overflow: hidden;
+}
+
+.ranking-card p:nth-child(3) {
+  display: flex;
+  justify-self: flex-start;
+}
+
+.ranking-card:nth-child(1) p:nth-child(3) {
+  grid-column: 4 / 5;
+}
+
+@media (min-width: 700px) {
+  #rankings-headline-subhead h4 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+  }
+
+  .ranking-card {
+    grid-template-columns: 20px 40px auto 20% 20%;
+    padding-right: 1%;
+  }
+
+  .ranking-card:not(:first-child) .artist-name {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+  }
+
+  #change {
+    display: flex;
+    justify-self: center;
+  }
+
+  .ranking-card:not(:first-child) #change {
+    color: #00ac4f;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media (min-width: 1280px) {
+  #rankings-headline-subhead h4 {
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 110%;
+  }
+
+  #rankings-headline-subhead p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+  }
+
+  .rankings-tabs-bar div p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+  }
+
+  .ranking-card {
+    grid-template-columns: 20px 40px auto 20% 20% 80px;
+    padding-right: 5%;
+  }
+}
