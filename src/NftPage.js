@@ -1,15 +1,15 @@
 import React from "react";
 import "./NftPage.css";
-import ClockDisplay from './EasyCountdown.js';
-import CountdownDisplay from './CountdownDisplay.js';
+import ClockDisplay from "./EasyCountdown.js";
+import CountdownDisplay from "./CountdownDisplay.js";
 import { TbWorld } from "react-icons/tb";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import NftFragment from "./NftFragment";
 import useWindowDimensions from "./UseWindowDimensionHook";
-import './CountdownDisplay.css';
+import "./CountdownDisplay.css";
+import { Link } from "react-router-dom";
 
 export default function NftPage() {
-
   const nftPageObj = [
     {
       artist: "Orbitian",
@@ -169,10 +169,12 @@ export default function NftPage() {
       <div className="more-nft-from-the-artist">
         <div className="more-from-artist">
           <h4>More From This Artist</h4>
-          <NftFragment collectionObj={nftPageObj}/>
+          <NftFragment collectionObj={nftPageObj} />
           <button className="nftPage-button">
-            <AiOutlineArrowRight />
-            Go To Artist Page
+            <Link to="/ArtistPage">
+              <AiOutlineArrowRight />
+              Go To Artist Page
+            </Link>
           </button>
         </div>
       </div>

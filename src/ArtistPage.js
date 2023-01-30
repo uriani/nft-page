@@ -81,9 +81,12 @@ export default function ArtistPage() {
     <div className="artist-page">
       <div className="cover-profile-image">
         <div className="image"></div>
-        
-          <img src="images/top-rated-artist-img-10.png" alt="" className="artistPage-profile-image"/>
-        
+
+        <img
+          src="images/top-rated-artist-img-10.png"
+          alt=""
+          className="artistPage-profile-image"
+        />
       </div>
       <div className="artist-info">
         <div className="frame-264">
@@ -146,8 +149,10 @@ export default function ArtistPage() {
                 return val;
               } else if (width >= 700 && width < 1280 && index <= 5) {
                 return val;
-              } else if (width >= 1280) {
+              } else if(width >= 1280) {
                 return val;
+              }else {
+                return false;
               }
             })
             .map((val, index) => {

@@ -139,6 +139,7 @@
 @media (min-width: 1280px) {
   .connect-wallet {
     height: 66vh;
+    min-height: 650px;
   }
 
   .wallet-headline-subhead h3 {
